@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="220" viewBox="0 0 180 220">
+  <rect width="180" height="220" fill="#eef2f3"/>
+  <circle cx="90" cy="72" r="40" fill="#34495e"/>
+  <path d="M28 205c4-55 25-82 62-82s58 27 62 82" fill="#34495e"/>
+  <text x="90" y="213" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#ffffff">PTP</text>
+</svg>

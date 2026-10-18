@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.9. Cây - Công nghệ Web an toàn</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div class="page">
+      <aside class="student-box">
+        <span class="student-name">Phan Thế Phong</span>
+        <span class="student-id">AT200345</span>
+      </aside>
+      <header class="banner">
+        <div>CÔNG NGHỆ WEB AN TOÀN</div>
+      </header>
+      <nav class="sidebar">
+        <div class="menu-title">Bài tập 2</div>
+        <a href="example.html">1.1. Ví dụ mẫu</a>
+        <a href="information.html">1.2. Giới thiệu bản thân</a>
+        <a href="Score.html">1.3. Bảng điểm</a>
+        <a href="Curriculum_vitae.html">1.4. CV</a>
+        <div class="menu-title">Bài tập 3</div>
+        <a href="javascript_examples.html">2.1. Ví dụ</a>
+        <a href="quiz.html">2.2. Thi trắc nghiệm</a>
+        <a href="lop.html">2.3. Form lớp</a>
+        <a href="hoso.html">2.4. Form Hồ sơ</a>
+        <a href="dangky.html">2.5. Form nhập</a>
+        <a href="list.html">2.6. Danh sách</a>
+        <a href="menu.html">2.7. Thực đơn</a>
+        <a href="tabs.html">2.8. Tab</a>
+        <a class="active" href="tree.html">2.9. Cây</a>
+        <a href="calculator.html">2.10. Máy tính</a>
+        <a href="animation.html">2.11. Hoạt cảnh</a>
+        <a href="table_search.html">2.12. Sắp xếp và tìm kiếm bảng</a>
+      </nav>
+      <main class="content">
+        <ul class="treeview">
+          <li>
+            <span class="toggle-btn" onclick="toggleTree(this)">-</span>
+            <span class="tree-node" onclick="selectNode(this)">Root</span>
+            <ul class="nested active">
+              <li><span class="no-toggle"></span><span class="tree-node" onclick="selectNode(this)">Folder 1</span></li>
+              <li>
+                <span class="toggle-btn" onclick="toggleTree(this)">-</span>
+                <span class="tree-node" onclick="selectNode(this)">Folder 2</span>
+                <ul class="nested active">
+                  <li><span class="no-toggle"></span><span class="tree-node" onclick="selectNode(this)">Folder 2-1</span></li>
+                  <li>
+                    <span class="toggle-btn" onclick="toggleTree(this)">-</span>
+                    <span class="tree-node" onclick="selectNode(this)">Folder 2-2</span>
+                    <ul class="nested active">
+                      <li><span class="no-toggle"></span><span class="tree-node" onclick="selectNode(this)">Folder 2-2-1</span></li>
+                      <li><span class="no-toggle"></span><span class="tree-node" onclick="selectNode(this)">Folder 2-2-2</span></li>
+                    </ul>
+                  </li>
+                  <li><span class="no-toggle"></span><span class="tree-node" onclick="selectNode(this)">Folder 2-3</span></li>
+                </ul>
+              </li>
+              <li><span class="no-toggle"></span><span class="tree-node" onclick="selectNode(this)">Folder 3</span></li>
+              <li>
+                <span class="toggle-btn" onclick="toggleTree(this)">-</span>
+                <span class="tree-node" onclick="selectNode(this)">Folder 4</span>
+                <ul class="nested active">
+                  <li><span class="no-toggle"></span><span class="tree-node" onclick="selectNode(this)">Folder 4-1</span></li>
+                </ul>
+              </li>
+              <li><span class="no-toggle"></span><span class="tree-node" onclick="selectNode(this)">Folder 5</span></li>
+            </ul>
+          </li>
+        </ul>
+      </main>
+      <footer class="footer">© 2026 Phan Thế Phong - AT200345 | Học viện Kỹ thuật Mật mã</footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+

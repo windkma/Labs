@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.1. Ví dụ - Công nghệ Web an toàn</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div class="page">
+      <aside class="student-box">
+        <span class="student-name">Phan Thế Phong</span>
+        <span class="student-id">AT200345</span>
+      </aside>
+      <header class="banner">
+        <div>CÔNG NGHỆ WEB AN TOÀN</div>
+      </header>
+      <nav class="sidebar">
+        <div class="menu-title">Bài tập 2</div>
+        <a href="example.html">1.1. Ví dụ mẫu</a>
+        <a href="information.html">1.2. Giới thiệu bản thân</a>
+        <a href="Score.html">1.3. Bảng điểm</a>
+        <a href="Curriculum_vitae.html">1.4. CV</a>
+        <div class="menu-title">Bài tập 3</div>
+        <a class="active" href="javascript_examples.html">2.1. Ví dụ</a>
+        <a href="quiz.html">2.2. Thi trắc nghiệm</a>
+        <a href="lop.html">2.3. Form lớp</a>
+        <a href="hoso.html">2.4. Form Hồ sơ</a>
+        <a href="dangky.html">2.5. Form nhập</a>
+        <a href="list.html">2.6. Danh sách</a>
+        <a href="menu.html">2.7. Thực đơn</a>
+        <a href="tabs.html">2.8. Tab</a>
+        <a href="tree.html">2.9. Cây</a>
+        <a href="calculator.html">2.10. Máy tính</a>
+        <a href="animation.html">2.11. Hoạt cảnh</a>
+        <a href="table_search.html">2.12. Sắp xếp và tìm kiếm bảng</a>
+      </nav>
+      <main class="content">
+        <h1>2.1. Ví dụ</h1>
+        <ol class="link-list">
+          <li>
+            <a href="#example1">Sử dụng biến</a>
+          </li>
+          <li>
+            <a href="#example2">Sử dụng Textbox và chương trình con</a>
+          </li>
+          <li>
+            <a href="#example3">Câu lệnh IF</a>
+          </li>
+          <li>
+            <a href="#example4">Đối tượng Date</a>
+          </li>
+          <li>
+            <a href="#example5">Switch</a>
+          </li>
+          <li>
+            <a href="#example6">Confirm</a>
+          </li>
+          <li>
+            <a href="#example7">Prompt</a>
+          </li>
+          <li>
+            <a href="#example8">String</a>
+          </li>
+          <li>
+            <a href="#example9">Array</a>
+          </li>
+          <li>
+            <a href="#example10">Thiết lập thời gian</a>
+          </li>
+          <li>
+            <a href="#example11">Ví dụ khác về thiết lập thời gian</a>
+          </li>
+          <li>
+            <a href="#example12">Đồng hồ</a>
+          </li>
+          <li>
+            <a href="#example13">Hiệu ứng ảnh</a>
+          </li>
+          <li>
+            <a href="#example14">Select / Option</a>
+          </li>
+        </ol>
+        <section id="example1" class="demo-section">
+          <h2>1. Sử dụng biến</h2>
+          <pre class="demo-code">var name = "Phong";</pre>
+          <button onclick="setText('r1','Xin chào Phong')">Chạy thử</button>
+          <div id="r1" class="result-box">
+          </div>
+        </section>
+        <section id="example2" class="demo-section">
+          <h2>2. Sử dụng Textbox và chương trình con</h2>
+          <input id="txtName" class="calc-input" placeholder="Nhập tên">
+          <button onclick="setText('r2','Xin chào '+document.getElementById('txtName').value)">Hiển thị</button>
+          <div id="r2" class="result-box">
+          </div>
+        </section>
+        <section id="example3" class="demo-section">
+          <h2>3. Câu lệnh IF</h2> 
+          <input id="ageIf" class="calc-input" type="number" placeholder="Nhập tuổi">
+          <button onclick="setText('r3',Number(document.getElementById('ageIf').value)>=18?'Đủ tuổi':'Chưa đủ tuổi')">Kiểm tra</button>
+          <div id="r3" class="result-box">
+          </div>
+        </section>
+        <section id="example4" class="demo-section">
+          <h2>4. Đối tượng Date</h2>
+          <button onclick="setText('r4',new Date().toLocaleDateString('vi-VN'))">Xem ngày</button>
+          <div id="r4" class="result-box">
+          </div>
+        </section>
+        <section id="example5" class="demo-section">
+          <h2>5. Switch</h2>
+          <input id="dayNumber" class="calc-input" type="number" min="1" max="7" placeholder="Nhập 1-7">
+          <button onclick="var d=['','Chủ nhật','Thứ hai','Thứ ba','Thứ tư','Thứ năm','Thứ sáu','Thứ bảy'];setText('r5',d[Number(document.getElementById('dayNumber').value)]||'Không hợp lệ')">Đổi thứ</button>
+          <div id="r5" class="result-box">
+          </div>
+        </section>
+        <section id="example6" class="demo-section">
+          <h2>6. Confirm</h2>
+          <button onclick="setText('r6',confirm('Bạn có thích JavaScript không?')?'Có':'Không')">Confirm</button>
+          <div id="r6" class="result-box">
+          </div>
+        </section>
+        <section id="example7" class="demo-section">
+          <h2>7. Prompt</h2>
+          <button onclick="var n=prompt('Nhập tên của bạn');setText('r7',n?'Xin chào '+n:'Bạn chưa nhập tên')">Prompt</button>
+          <div id="r7" class="result-box">
+          </div>
+        </section>
+        <section id="example8" class="demo-section">
+          <h2>8. String</h2>
+          <input id="stringInput" class="calc-input" placeholder="Nhập chuỗi">
+          <button onclick="setText('r8',document.getElementById('stringInput').value.toUpperCase())">Viết hoa</button>
+          <div id="r8" class="result-box">
+          </div>
+        </section>
+        <section id="example9" class="demo-section">
+          <h2>9. Array</h2>
+          <button onclick="setText('r9',['HTML','CSS','JavaScript'].join(' - '))">Hiển thị mảng</button>
+          <div id="r9" class="result-box">
+          </div>
+        </section>
+        <section id="example10" class="demo-section">
+          <h2>10. Thiết lập thời gian</h2>
+          <button onclick="setTimeout(function(){setText('r10','Đã chạy sau 2 giây')},2000)">Chạy sau 2 giây</button>
+          <div id="r10" class="result-box">
+          </div>
+        </section>
+        <section id="example11" class="demo-section">
+          <h2>11. Ví dụ khác về thiết lập thời gian</h2>
+          <button onclick="var c=0;var t=setInterval(function(){c++;setText('r11','Đếm: '+c);if(c==5)clearInterval(t)},1000)">Đếm 5 giây</button>
+          <div id="r11" class="result-box">
+          </div>
+        </section>
+        <section id="example12" class="demo-section">
+          <h2>12. Đồng hồ</h2>
+          <div id="clock" class="result-box">
+          </div>
+        </section>
+        <section id="example13" class="demo-section">
+          <h2>13. Hiệu ứng ảnh</h2>
+          <img class="avatar" id="demoImg" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Ảnh">
+          <button onclick="document.getElementById('demoImg').style.opacity=document.getElementById('demoImg').style.opacity==='0.4'?'1':'0.4'">Đổi hiệu ứng</button>
+        </section>
+        <section id="example14" class="demo-section">
+          <h2>14. Select / Option</h2>
+          <select id="colorSelect" onchange="setText('r14','Bạn chọn: '+this.value)">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+          </select>
+          <div id="r14" class="result-box">
+          </div>
+        </section>
+      </main>
+      <footer class="footer">© 2026 Phan Thế Phong - AT200345 | Học viện Kỹ thuật Mật mã</footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
