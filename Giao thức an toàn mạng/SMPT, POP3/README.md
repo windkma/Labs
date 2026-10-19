@@ -16,11 +16,11 @@ SMTP : gửi thư từ client lên server
     
 - tạo bản ghi MX
     
-    ![image.png](./images/image 1.png)
+    ![image.png](./images/image%201.png)
     
 - tạo domain name
     
-    ![image.png](./images/image 2.png)
+    ![image.png](./images/image%202.png)
     
 - cài đặt mdaemon
 - triển khai 2 user
@@ -29,30 +29,30 @@ SMTP : gửi thư từ client lên server
     
     user2@phanthephong-srv.class3 
     
-    ![image.png](./images/image 3.png)
+    ![image.png](./images/image%203.png)
     
 - tạo tài khoản trên thunderbird
     
-    ![image.png](./images/image 4.png)
+    ![image.png](./images/image%204.png)
     
-    ![image.png](./images/image 5.png)
+    ![image.png](./images/image%205.png)
     
 - đăng nhập user2 trên win 10
     
-    ![image.png](./images/image 6.png)
+    ![image.png](./images/image%206.png)
     
 - gửi thư từ user2 sang user1
     
-    ![image.png](./images/image 7.png)
+    ![image.png](./images/image%207.png)
     
 - đã nhận được thư
     
-    ![image.png](./images/image 8.png)
+    ![image.png](./images/image%208.png)
     
 - trả lời lại
     
-    ![image.png](./images/image 9.png)
+    ![image.png](./images/image%209.png)
     
 - đã nhận đc thư trả lời
     
-    ![image.png](./images/image 10.png)
+    ![image.png](./images/image%2010.png)

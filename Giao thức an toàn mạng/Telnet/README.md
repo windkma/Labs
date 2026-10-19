@@ -11,11 +11,11 @@
     systemctl restart inetutils-inetd
     ```
     
-    ![image.png](./images/image 1.png)
+    ![image.png](./images/image%201.png)
     
 - tạo domain name cho server
 
-![image.png](./images/image 2.png)
+![image.png](./images/image%202.png)
 
 - đăng nhập telnet từ client
     
@@ -23,4 +23,4 @@
     telnet 10.3.51.9 
     ```
     
-    ![image.png](./images/image 3.png)
+    ![image.png](./images/image%203.png)

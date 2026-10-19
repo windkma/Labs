@@ -15,14 +15,14 @@
 
 ### 1. AH transport
 
-![image.png](./images/image 1.png)
+![image.png](./images/image%201.png)
 
 - Cài đặt công cụ strongswan
 - tạo PSK cho cả 2 máy
     
-    ![image.png](./images/image 2.png)
+    ![image.png](./images/image%202.png)
     
-    ![image.png](./images/image 3.png)
+    ![image.png](./images/image%203.png)
     
 - sửa /etc/ipsec.conf máy server (10.3.51.10)
     
@@ -36,7 +36,7 @@
     	auto=start
     ```
     
-    ![image.png](./images/image 4.png)
+    ![image.png](./images/image%204.png)
     
     tương tự với máy client
     
@@ -50,29 +50,29 @@
     	auto=start
     ```
     
-    ![image.png](./images/image 5.png)
+    ![image.png](./images/image%205.png)
     
 - ipsec stop
 - ipsec start
 - ipsec status
 - server tới client
     
-    ![image.png](./images/image 6.png)
+    ![image.png](./images/image%206.png)
     
-    ![image.png](./images/image 7.png)
+    ![image.png](./images/image%207.png)
     
 - client tới server
     
-    ![image.png](./images/image 8.png)
+    ![image.png](./images/image%208.png)
     
-    ![image.png](./images/image 9.png)
+    ![image.png](./images/image%209.png)
     
 
 ### 2. ESP transport
 
 - server
 
-![image.png](./images/image 10.png)
+![image.png](./images/image%2010.png)
 
 ```jsx
 conn transportESP
@@ -84,11 +84,11 @@ conn transportESP
 	auto=start
 ```
 
-![image.png](./images/image 11.png)
+![image.png](./images/image%2011.png)
 
 - client
 
-![image.png](./images/image 12.png)
+![image.png](./images/image%2012.png)
 
 ```jsx
 conn transportESP
@@ -100,7 +100,7 @@ conn transportESP
 	auto=start
 ```
 
-![image.png](./images/image 13.png)
+![image.png](./images/image%2013.png)
 
 ### 3. AH tunnel
 
@@ -116,9 +116,9 @@ conn transportESP
     	auto=start
     ```
     
-    ![image.png](./images/image 14.png)
+    ![image.png](./images/image%2014.png)
     
-    ![image.png](./images/image 15.png)
+    ![image.png](./images/image%2015.png)
     
 - client
     
@@ -133,9 +133,9 @@ conn transportESP
     ```
     
 
-![image.png](./images/image 16.png)
+![image.png](./images/image%2016.png)
 
-![image.png](./images/image 17.png)
+![image.png](./images/image%2017.png)
 
 ### 4. ESP tunnel
 
@@ -152,9 +152,9 @@ conn transportESP
     ```
     
 
-![image.png](./images/image 18.png)
+![image.png](./images/image%2018.png)
 
-![image.png](./images/image 19.png)
+![image.png](./images/image%2019.png)
 
 - client
     
@@ -169,6 +169,6 @@ conn transportESP
     ```
     
 
-![image.png](./images/image 20.png)
+![image.png](./images/image%2020.png)
 
-![image.png](./images/image 21.png)
+![image.png](./images/image%2021.png)

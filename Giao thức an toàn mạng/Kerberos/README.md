@@ -24,12 +24,12 @@
     
 - sau khi gia nhập dc thì đã có kerberos mặc định trên os
     
-    ![image.png](./images/image 1.png)
+    ![image.png](./images/image%201.png)
     
 - Cài kerberos trên win 10
 - Vào file config
     
-    ![image.png](./images/image 2.png)
+    ![image.png](./images/image%202.png)
     
     ```jsx
     [libdefaults]
@@ -67,11 +67,11 @@
     - value: FILE:C:\krb5\krbcache
 - ấn get ticket
     
-    ![image.png](./images/image 3.png)
+    ![image.png](./images/image%203.png)
     
 
-![image.png](./images/image 4.png)
+![image.png](./images/image%204.png)
 
 - truy cập smb
 
-![image.png](./images/image 5.png)
+![image.png](./images/image%205.png)

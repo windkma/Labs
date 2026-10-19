@@ -32,11 +32,11 @@ Cơ chế xác thực client bằng cặp khóa công khai, server gửi challan
     ssh-keygen -t rsa -b 4096 -f /etc/ssh/ssh_host_rsa_key
     ```
     
-    ![image.png](./images/image 1.png)
+    ![image.png](./images/image%201.png)
     
 - khởi động lại ssh
     
-    ![image.png](./images/image 2.png)
+    ![image.png](./images/image%202.png)
     
     - khóa đã bị đổi, muốn ssh thì phải xóa publickey của server mà client đã lưu trên máy đi
         
@@ -44,7 +44,7 @@ Cơ chế xác thực client bằng cặp khóa công khai, server gửi challan
         ssh-keygen -R 10.3.51.1
         ```
         
-        ![image.png](./images/image 3.png)
+        ![image.png](./images/image%203.png)
         
 
 ### 2. Triển khai xác thực bằng mã khóa công khai
@@ -55,7 +55,7 @@ Cơ chế xác thực client bằng cặp khóa công khai, server gửi challan
     ssh-keygen
     ```
     
-    ![image.png](./images/image 4.png)
+    ![image.png](./images/image%204.png)
     
 - đẩy public key sang server
     
@@ -63,7 +63,7 @@ Cơ chế xác thực client bằng cặp khóa công khai, server gửi challan
     ssh-copy-id phong@10.3.51.1
     ```
     
-    ![image.png](./images/image 5.png)
+    ![image.png](./images/image%205.png)
     
 - mở file /etc/ssh/sshd_config để tắt đăng nhập bằng password đi để thử đăng nhập bằng cặp khóa đã tạo
     
@@ -72,8 +72,8 @@ Cơ chế xác thực client bằng cặp khóa công khai, server gửi challan
     PasswordAuthentication no
     ```
     
-    ![image.png](./images/image 6.png)
+    ![image.png](./images/image%206.png)
     
 - đăng nhập luôn mà không cần pass
     
-    ![image.png](./images/image 7.png)
+    ![image.png](./images/image%207.png)
